@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let usr_slct = prompt("What do you choose: Rock, Paper, or Scisors?");
+        
+        let cpu_slct = Math.random();
+            if(cpu_slct < .34){
+                cpu_slct="Rock";
+            }
+            else if(cpu_slct <= .66){
+                cpu_slct="Paper";
+            }
+            else{
+                cpu_slct="Scisors";
+            }
+        let compare = function (choice1, choice2)
+        {
+            if(choice1 === choice2){
+            return "Its a Tie";
+            }
+        
+            else if(choice1 === "Rock"){
+                if (choice2 === "Paper"){
+                    return "Paper Win";
+                }
+                else {
+                    return "Rock Win";
+                }
+            }
+            else if (choice1 === "Paper"){
+                if(choice2 === "Rock"){
+                    return "Paper Win";
+                }
+                else {
+                    return "Scisors Win";
+                }
+            }
+            else if (choice1 === "Scisors"){
+                if(choice2 === "Rock"){
+                    return "Rock Win";
+                }
+                else {
+                    return "Scisors Win";
+                }
+
+            } 
+        } 
+    
+    </script>
+</body>
+</html>
